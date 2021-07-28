@@ -1,9 +1,9 @@
 import scala.annotation.tailrec
-
+// Input Examples: 255,294,and 200
 object Base10ToBase2 {
   val base: Int = 2;
   
-
+  
   def parser(str: String): String = {
     val lentobe = 8 - str.length
     (1 to lentobe).map(_*0).mkString + str
